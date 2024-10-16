@@ -1,4 +1,6 @@
+
 const baseUrl = "https://my-json-server.typicode.com/ZippyKitche/Nutrifit/mealPlans"
+
  //calculate BMI = Weight/height*height
  document.getElementById('calculate').addEventListener('click', calculateBMI);
 
@@ -29,7 +31,7 @@ async function calculateBMI() {
 }
 
 async function fetchMealPlans(category) {
-    const response = await fetch(`${baseUrl}=${category}`);
+    const response = await fetch(`${baseUrl}?category=${category}`);
      
     if (!response.ok) {
         document.getElementById('meal-plans').innerText = "Failed to fetch meal plans.";
