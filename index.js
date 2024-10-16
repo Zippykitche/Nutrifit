@@ -1,4 +1,4 @@
-
+const baseUrl = "https://my-json-server.typicode.com/ZippyKitche/Nutrifit/mealPlans"
  //calculate BMI = Weight/height*height
  document.getElementById('calculate').addEventListener('click', calculateBMI);
 
@@ -6,7 +6,6 @@ async function calculateBMI() {
     const weight = parseFloat(document.getElementById('weight').value);
     const height = parseFloat(document.getElementById('height').value);
     
-    // Validate inputs
     if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
         document.getElementById('bmi-result').innerText = "Please enter valid weight and height.";
         return;
@@ -30,7 +29,7 @@ async function calculateBMI() {
 }
 
 async function fetchMealPlans(category) {
-    const response = await fetch(`http://localhost:3003/mealPlans?category=${category}`);
+    const response = await fetch(`${baseUrl}=${category}`);
      
     if (!response.ok) {
         document.getElementById('meal-plans').innerText = "Failed to fetch meal plans.";
