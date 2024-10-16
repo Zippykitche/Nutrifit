@@ -1,41 +1,40 @@
 {
-    "mealPlans": [
-      {
-        "id": 1,
-        "category": "underweight",
-        "meals": [
-          "Breakfast: Avocado Toast",
-          "Lunch: Chicken Salad",
-          "Dinner: Quinoa Bowl"
-        ]
-      },
-      {
-        "id": 2,
-        "category": "normal",
-        "meals": [
-          "Breakfast: Oatmeal with Berries",
-          "Lunch: Grilled Chicken and Vegetables",
-          "Dinner: Salmon with Rice"
-        ]
-      },
-      {
-        "id": 3,
-        "category": "overweight",
-        "meals": [
-          "Breakfast: Greek Yogurt with Nuts",
-          "Lunch: Spinach Salad",
-          "Dinner: Stir-fried Vegetables"
-        ]
-      },
-      {
-        "id": 4,
-        "category": "obese",
-        "meals": [
-          "Breakfast: Smoothie with Spinach and Banana",
-          "Lunch: Quinoa and Black Bean Salad",
-          "Dinner: Baked Fish with Vegetables"
-        ]
-      }
-    ]
-  }
-  
+  "mealPlans": [
+    {
+      "id": 1,
+      "category": "underweight",
+      "meals": [
+        "Breakfast: Avocado Toast",
+        "Lunch: Chicken Salad",
+        "Dinner: Quinoa Bowl"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "normal",
+      "meals": [
+        "Breakfast: Oatmeal with Berries",
+        "Lunch: Grilled Chicken and Vegetables",
+        "Dinner: Salmon with Rice"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "overweight",
+      "meals": [
+        "Breakfast: Greek Yogurt with Nuts",
+        "Lunch: Spinach Salad",
+        "Dinner: Stir-fried Vegetables"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "obese",
+      "meals": [
+        "Breakfast: Smoothie with Spinach and Banana",
+        "Lunch: Quinoa and Black Bean Salad",
+        "Dinner: Baked Fish with Vegetables"
+      ]
+    }
+  ]
+}

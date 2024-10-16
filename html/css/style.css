@@ -1,1 +1,32 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1606233980481-754c2dd95705?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+.personal-nutrition-guide {
+    color: white;
+}
 
+h2 {
+    color: white;
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+input[type="number"] {
+    width: 150px;
+    display: inline-block; 
+}
+
+#meal-plans {
+    color: white;
+
+
+  
