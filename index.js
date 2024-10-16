@@ -47,3 +47,4 @@ async function fetchMealPlans(category) {
         mealPlansDiv.innerHTML += `<p>${meals}</p>`;
     });
 }
+
