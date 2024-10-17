@@ -31,3 +31,40 @@ input[type="number"] {
 #bmi-result {
     color: white;
 }
+.bmi-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.circle-frame {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Ensures the image doesn't overflow the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc; /* Optional: add a border */
+    margin: 0 auto; /* Centers the circle frame */
+}
+
+.circle-frame img {
+    width: 100%; /* Make the image cover the circle */
+    height: 100%; /* Ensure the image fills the frame */
+    object-fit: cover; /* Crop image to fit the circle */
+}
+
+.bmi-icon p {
+    margin-top: 10px; /* Adjust the space between the image and text */
+    color: red; /* Ensure text is visible */
+    text-align: center; /* Center the text below the image */
+    font-weight: bold;
+    font-family: cursive, Arial, Helvetica, sans-serif;
+}
+#bmi-solution {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: white; /* Set to white as per your preference */
+}
