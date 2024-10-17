@@ -31,6 +31,9 @@ input[type="number"] {
 #bmi-result {
     color: white;
 }
+#bmi-category{
+    color: white;
+}
 .bmi-icons {
     display: flex;
     justify-content: space-around;

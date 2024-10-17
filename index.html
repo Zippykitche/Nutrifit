@@ -17,31 +17,32 @@
             <input type="number" id="height" placeholder="Height (m)" class="form-control mb-2">
             <button id="calculate" class="btn btn-primary">Calculate BMI</button>
             <p id="bmi-result" class="mt-2"></p>
+            <p id="bmi-category" class="mt-2"></p> 
         </div>
 
         <div id="meal-plans" class="mt-4"></div>
     </div>
 
     <div class="bmi-icons mt-4">
-        <div class="bmi-icon">
+        <div class="bmi-icon" onclick="fetchMealPlans('underweight')">
             <div class="circle-frame" id="underweight">
                 <img src="https://st5.depositphotos.com/3584053/65653/i/600/depositphotos_656539532-stock-photo-slim-waist-oversihttps://media.istockphoto.com/id/1014887920/photo/woman-hold-hands-in-belly-ribs.jpg?s=1024x1024&w=is&k=20&c=GbPPtNfB2m-OVEy8qV0gXXuSkPfT6FaPu5PEJvJnK-o=zed-womans-pants.jpg">
             </div>
             <p>Underweight?</p>
         </div>
-        <div class="bmi-icon">
+        <div class="bmi-icon" onclick="fetchMealPlans('normal')">
             <div class="circle-frame" id="normal">
                 <img src="https://media.istockphoto.com/id/1204406862/photo/a-rural-worker-gives-thumbs-up.jpg?s=1024x1024&w=is&k=20&c=SB10jFsiN2s6wSav02Gt-ajQoj8neo9SvaFXzBcT1Q0=">
             </div>
             <p>Normal?</p>
         </div>
-        <div class="bmi-icon">
+        <div class="bmi-icon" onclick="fetchMealPlans('overweight')">
             <div class="circle-frame" id="overweight">
                 <img src="https://media.istockphoto.com/id/1347003096/photo/mans-hand-holding-excessive-belly-fat-overweight-concept.jpg?s=1024x1024&w=is&k=20&c=hp0Td94OmTbaQ0ZXVJyp_D3VqWtBZNwWVsSXfG3TqT8=">
             </div>
             <p>Overweight?</p>
         </div>
-        <div class="bmi-icon">
+        <div class="bmi-icon" onclick="fetchMealPlans('obese')">
             <div class="circle-frame" id="obese">
                 <img src="https://media.istockphoto.com/id/1395280044/photo/big-fat-man-standing-to-show-real-size-with-causual-clothing.jpg?s=1024x1024&w=is&k=20&c=WesxZaWlegXM5ewwXWoM7gZN9I9HByJz4pe4Ii9bYDE=">
             </div>

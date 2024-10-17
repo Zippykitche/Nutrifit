@@ -26,8 +26,21 @@ async function calculateBMI() {
     } else {
         category = 'obese';
     }
+        // Display the category
+        document.getElementById('bmi-category').innerText = `Category: ${category}`;
+    }
+    
 
-    await fetchMealPlans(category);
+function showCategoryIcons(category) {
+    const icons = document.querySelectorAll('.bmi-icon');
+
+    // Reset all icons' styles
+    icons.forEach(icon => icon.style.display = 'inline-block');
+
+    // You can add logic here if you want to highlight the active icon
+    const activeIcon = document.getElementById(category);
+    activeIcon.style.display = 'inline-block'; // Ensure the active icon is visible
+    activeIcon.classList.add('active'); // Add a class for any special styling if needed
 }
 
 async function fetchMealPlans(category) {
