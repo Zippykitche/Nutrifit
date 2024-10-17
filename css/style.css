@@ -48,7 +48,7 @@ input[type="number"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #ccc; /* Optional: add a border */
+    border: 2px solid rgb(131, 217, 3); /* Optional: add a border */
     margin: 0 auto; /* Centers the circle frame */
 }
 
@@ -71,3 +71,24 @@ input[type="number"] {
     font-size: 18px;
     color: white; /* Set to white as per your preference */
 }
+
+.logo-container {
+    position: fixed; /* Keeps the logo and name in a fixed position */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    display: flex; /* Aligns the logo and text horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.logo {
+    width: 50px; /* Set logo width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.company-name {
+    font-size: 1.5rem; /* Font size for the company name */
+    font-weight: bold;
+    color: rgb(131, 217, 3); /* Makes the company name bold */
+}
+
