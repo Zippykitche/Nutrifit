@@ -9,7 +9,6 @@
 </head>
 <body>
     <div class="container">
-
         <div class="logo-container">
             <img src="images/imgbin-apple-v4PWgbV6WDXFH6BTQA0pYU1zF_t-removebg-preview.png" class="logo">
             <h1 class="company-name">Nutrifit</h1>
@@ -17,46 +16,95 @@
 
         <h1 class="personal-nutrition-guide">Personal Nutrition Guide </h1>
         
-        <div class="mt-4">
+        <div class="bmi-calculator mt-4">
             <h2>BMI Calculator</h2>
             <input type="number" id="weight" placeholder="Weight (kg)" class="form-control mb-2">
-            <input type="number" id="height" placeholder="Height (m)" class="form-control mb-2">
+            <input type="number" id="height" placeholder="Height (cm)" class="form-control mb-2">
             <button id="calculate" class="btn btn-primary">Calculate BMI</button>
             <p id="bmi-result" class="mt-2"></p>
             <p id="bmi-category" class="mt-2"></p> 
         </div>
-
-        <div id="meal-plans" class="mt-4"></div>
     </div>
 
-    <div class="bmi-icons mt-4">
-        <div class="bmi-icon" onclick="fetchMealPlans('underweight')">
+    <div class="bmi-icons mt-4 d-flex justify-content-center">
+
+        <div class="bmi-icon mx-3">
             <div class="circle-frame" id="underweight">
-                <img src="https://st5.depositphotos.com/3584053/65653/i/600/depositphotos_656539532-stock-photo-slim-waist-oversihttps://media.istockphoto.com/id/1014887920/photo/woman-hold-hands-in-belly-ribs.jpg?s=1024x1024&w=is&k=20&c=GbPPtNfB2m-OVEy8qV0gXXuSkPfT6FaPu5PEJvJnK-o=zed-womans-pants.jpg">
+                <img src="https://st5.depositphotos.com/3584053/65653/i/600/depositphotos_656539532-stock-photo-slim-waist-oversized-womans-pants.jpg">
             </div>
             <p>Underweight?</p>
         </div>
-        <div class="bmi-icon" onclick="fetchMealPlans('normal')">
+        <div class="bmi-icon mx-3">
             <div class="circle-frame" id="normal">
                 <img src="https://media.istockphoto.com/id/1204406862/photo/a-rural-worker-gives-thumbs-up.jpg?s=1024x1024&w=is&k=20&c=SB10jFsiN2s6wSav02Gt-ajQoj8neo9SvaFXzBcT1Q0=">
             </div>
             <p>Normal?</p>
         </div>
-        <div class="bmi-icon" onclick="fetchMealPlans('overweight')">
+        <div class="bmi-icon mx-3">
             <div class="circle-frame" id="overweight">
                 <img src="https://media.istockphoto.com/id/1347003096/photo/mans-hand-holding-excessive-belly-fat-overweight-concept.jpg?s=1024x1024&w=is&k=20&c=hp0Td94OmTbaQ0ZXVJyp_D3VqWtBZNwWVsSXfG3TqT8=">
             </div>
             <p>Overweight?</p>
         </div>
-        <div class="bmi-icon" onclick="fetchMealPlans('obese')">
+        <div class="bmi-icon mx-3">
             <div class="circle-frame" id="obese">
                 <img src="https://media.istockphoto.com/id/1395280044/photo/big-fat-man-standing-to-show-real-size-with-causual-clothing.jpg?s=1024x1024&w=is&k=20&c=WesxZaWlegXM5ewwXWoM7gZN9I9HByJz4pe4Ii9bYDE=">
             </div>
             <p>Obese?</p>
         </div>
     </div>
+
+    <!-- Nutrition Form -->
+    <div id="nutrition-form" class="mt-4 form-container" style="display:none;">
+        <p>Fill the form to get nutrition info</p>
+    
+        <input type="number" id="bmi" placeholder="BMI" class="form-control mb-2" required>
+    
+        <input type="number" id="age" placeholder="Age (years)" class="form-control mb-2" required>
+        
+        <select id="sex" class="form-control mb-2" required>
+            <option value="" disabled selected>Select Sex</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        
+        <select id="activity-level" class="form-control mb-2" required>
+            <option value="" disabled selected>Select Activity Level</option>
+            <option value="Inactive">Inactive</option>
+            <option value="Low Active">Low Active</option>
+            <option value="Active">Active</option>
+            <option value="Very Active">Very Active</option>
+        </select>
+        
+        <button id="get-nutrition" class="btn btn-primary">Get Nutrition Info</button>
+    </div>
+    
+    <div id="nutrition-category" class="mt-2"></div>
+
+    <div id="nutrition-info-container" class="nutrition-table">
+        <h2 class="text-center">Nutrition Information</h2>
+        <table class="table table-bordered text-center">
+            <thead>
+                <tr>
+                    <th>Macronutrient</th>
+                    <th>Recommended Intake</th>
+                </tr>
+            </thead>
+            <tbody id="nutrition-info-body">
+               
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><strong>Estimated Daily Calories:</strong></td>
+                    <td id="estimated-calories"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    
     
     <!-- Display solutions here -->
+    <div id="nutrition-info" class="mt-4"></div> 
     <div id="bmi-solution" class="mt-4"></div>
 </div>
 
